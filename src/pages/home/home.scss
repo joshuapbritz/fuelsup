@@ -1,0 +1,47 @@
+.card {
+    width: calc(100% - 50px);
+    height: auto;
+    margin: 25px;
+    position: relative;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px #dddddd;
+
+    .header {
+        text-align: center;
+        font-size: 7vmin;
+        color: #666666;
+
+        &::after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 70%;
+          background-color: #dddddd;
+          margin: 10px auto;
+        }
+    }
+
+    .content {
+        padding: 5px;
+
+        .price {
+            display: block;
+            text-align: center;
+            font-size: 5vmin;
+
+            &.good {
+              color: rgb(68, 184, 68);
+            }
+
+            &.warning {
+              color: rgb(250, 175, 45);
+            }
+
+            &.bad {
+              color: rgb(255, 99, 71);
+            }
+        }
+    }
+}
